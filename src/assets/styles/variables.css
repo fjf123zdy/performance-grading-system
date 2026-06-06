@@ -1,0 +1,83 @@
+/* === 合成革企业环境绩效分级评价系统 — CSS 变量定义 === */
+
+:root {
+  /* === 主色调 === */
+  --color-primary: #1a5276;
+  --color-primary-light: #2980b9;
+  --color-primary-dark: #0e3451;
+
+  /* === 辅助色 === */
+  --color-success: #27ae60;
+  --color-success-light: #2ecc71;
+  --color-warning: #f39c12;
+  --color-warning-light: #f1c40f;
+  --color-danger: #e74c3c;
+  --color-danger-light: #ec7063;
+  --color-info: #3498db;
+
+  /* === 等级色 === */
+  --color-level-1: #f1c40f;       /* 一级 — 金色（引领级） */
+  --color-level-1-bg: #fef9e7;
+  --color-level-1-border: #f9e79f;
+  --color-level-2: #95a5a6;       /* 二级 — 银色（先进级） */
+  --color-level-2-bg: #f2f3f4;
+  --color-level-2-border: #ccd1d1;
+  --color-level-3: #cd7f32;       /* 三级 — 铜色（基础级） */
+  --color-level-3-bg: #fdf2e9;
+  --color-level-3-border: #edbb99;
+
+  /* === 中性色 === */
+  --color-bg: #f5f6fa;
+  --color-bg-white: #ffffff;
+  --color-bg-card: #ffffff;
+  --color-border: #dcdfe6;
+  --color-border-light: #e4e7ed;
+  --color-text-primary: #2c3e50;
+  --color-text-regular: #606266;
+  --color-text-secondary: #909399;
+  --color-text-placeholder: #c0c4cc;
+
+  /* === 侧边栏 === */
+  --sidebar-width: 240px;
+  --sidebar-bg: #1a2639;
+  --sidebar-text: #bfc9d4;
+  --sidebar-active: #409eff;
+
+  /* === 顶部栏 === */
+  --header-height: 56px;
+  --header-bg: #ffffff;
+  --header-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+
+  /* === 间距 === */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* === 圆角 === */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* === 阴影 === */
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
+
+  /* === 字体 === */
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 13px;
+  --font-size-base: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-xxl: 24px;
+  --font-size-title: 28px;
+
+  /* === 过渡 === */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+}

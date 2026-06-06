@@ -1,0 +1,107 @@
+/* === 表格增强样式 === */
+
+/* 判断矩阵表格 */
+.matrix-table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.matrix-table th,
+.matrix-table td {
+  padding: 6px 10px;
+  text-align: center;
+  border: 1px solid var(--color-border-light);
+  min-width: 60px;
+  font-size: var(--font-size-sm);
+}
+
+.matrix-table th {
+  background: #eaf2f8;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.matrix-table .diagonal {
+  background: #f8f9fb;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+}
+
+.matrix-table .cell-editable {
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.matrix-table .cell-editable:hover {
+  background: #eaf7ea;
+}
+
+.matrix-table .cell-auto-filled {
+  background: #f0f7fb;
+  color: var(--color-primary-light);
+}
+
+/* 评分表格 */
+.score-table th:first-child {
+  width: 40%;
+}
+
+.score-table td:last-child {
+  text-align: center;
+  width: 120px;
+}
+
+.score-table .score-input {
+  width: 80px;
+  text-align: center;
+}
+
+/* 分级结果表格 */
+.grade-table {
+  font-size: var(--font-size-base);
+}
+
+.grade-table .threshold-col {
+  text-align: center;
+  font-weight: 500;
+}
+
+.grade-table .actual-col {
+  text-align: center;
+}
+
+.grade-table .result-col {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* 权重表 */
+.weight-table .weight-bar-cell {
+  width: 200px;
+}
+
+.weight-bar {
+  height: 20px;
+  border-radius: 10px;
+  background: var(--color-primary-light);
+  transition: width var(--transition-normal);
+  min-width: 2px;
+}
+
+.weight-bar-container {
+  width: 100%;
+  background: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* 一致性结果 */
+.consistency-pass {
+  color: var(--color-success);
+  font-weight: 600;
+}
+
+.consistency-fail {
+  color: var(--color-danger);
+  font-weight: 600;
+}

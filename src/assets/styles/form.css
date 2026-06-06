@@ -1,0 +1,81 @@
+/* === 表单增强样式 === */
+
+.form-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.form-section-title {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--color-primary-light);
+}
+
+.form-row {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.form-row .form-group {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.form-hint {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  margin-top: var(--spacing-xs);
+}
+
+.form-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: flex-end;
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-border-light);
+}
+
+/* 只读输入框 */
+.form-input[readonly] {
+  background: #f8f9fb;
+  cursor: default;
+}
+
+/* 数字输入框 */
+.form-input[type="number"] {
+  font-family: 'SF Mono', 'Monaco', 'Menlo', monospace;
+}
+
+/* 可编辑表格中的输入框 */
+.cell-input {
+  width: 80px;
+  padding: 4px 8px;
+  font-size: var(--font-size-sm);
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  transition: all var(--transition-fast);
+  font-family: var(--font-family);
+}
+
+.cell-input:hover {
+  border-color: var(--color-border);
+}
+
+.cell-input:focus {
+  border-color: var(--color-primary-light);
+  background: var(--color-bg-white);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(41, 128, 185, 0.15);
+}
+
+/* 互反值自动填充的单元格 */
+.cell-auto {
+  background: #f0f7fb;
+  color: var(--color-text-secondary);
+}
