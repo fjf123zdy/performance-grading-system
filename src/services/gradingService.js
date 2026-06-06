@@ -131,10 +131,10 @@ export function performGrading(enterprise, weights = null) {
     qualLevel,
     overallLevel,
     quantitativeBreakdown: {
-      wastewater: result.quantitative.wastewaterPerUnit.level,
-      vocs: result.quantitative.vocsPerUnit.level,
-      dmf: result.quantitative.dmfConcentration.level,
-      unorganizedVOC: result.quantitative.unorganizedVOC.level
+      wastewater: result.quantitative.wastewaterPerUnit.level.level,
+      vocs: result.quantitative.vocsPerUnit.level.level,
+      dmf: result.quantitative.dmfConcentration.level.level,
+      unorganizedVOC: result.quantitative.unorganizedVOC.level.level
     },
     qualitativeScore: result.qualitative?.percentage || 0
   }
